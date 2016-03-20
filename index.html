@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>player</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+
+<div class="main">
+	
+	  <div class="player-container">
+    
+	    <h3 class="current-song">
+	        Patricia Touma - Riding On The Bus
+	    </h3>
+
+	    <hr>
+
+	    <div class="controls">
+	        <progress max="" value=""></progress>
+
+	        <button class="play btn">play/pause</button>
+
+	        <span class="time"></span>
+
+	        <button class="prev btn">prev</button>
+	        <button class="back btn"> <<</button>
+	        <button class="forward btn"> >></button>
+	        <button class="next btn">next</button>
+
+	    </div>
+
+	    <hr>
+
+	    <div class="volume-controls">
+	        <progress class="volume" max="100" value="70"></progress>
+
+	        <button class="volume-up btn btn-xs">volume up</button>
+	        <button class="volume-down btn btn-xs">volume down</button>
+
+	        <span class="current-volume"></span>
+	    </div>
+
+	    <hr>
+
+	    <audio class="audio" src="" controls="true"></audio>
+	    
+			<ul class="playlist">
+	        <li><a href="#" data-file="PatriciaTouma_RidingOnTheBus.mp3">Patricia Touma - Riding On The Bus</a></li>
+	        <li><a href="#" data-file="PatriciaTouma_TheFrostIsOnThePumpkin.mp3">Patricia Touma - The Frost Is On The
+	            Pumpkin</a></li>
+	        <li><a href="#" data-file="PatriciaTouma_TheMerryGoRound.mp3">Patricia Touma - The Merry Go Round</a></li>
+	    </ul>
+
+	 	</div>
+  
+    <hr>
+
+    <div class="instructions">
+
+        <b>.src</b> - путь к аудио файлу <br>
+        <b>.controls</b> - элементы управления (показаны или нет)<br>
+        <b>.currentTime</b> - текущая позиция проигрывания в секундах<br>
+        <b>.duration</b> - общее время проигрывания<br>
+        <b>.volume</b> - громкость<br>
+        <b>.play()</b> - метод "начать проигрывание"<br>
+        <b>.pause()</b> - метод "остановить проигрывание"<br>
+        <br>
+        события:<br>
+        <b>timeupdate</b> - изменяется текущая позиция проигрывания<br>
+        <b>pause</b> - когда происходит постановка на паузу<br>
+        <b>play</b> - когда происходит начало проигрывания<br>
+        <b>volumechange</b> - когда происходит изменение громкости<br>
+    </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

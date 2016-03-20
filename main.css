@@ -1,0 +1,25 @@
+.main {
+  margin: auto;
+  width: 500px;
+}
+
+progress {
+  display: block;
+  margin: 5px 0 10px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.time,
+.current-volume {
+  font-size: 13px;
+}
+
+progress.volume {
+  width: 50%;
+}
